@@ -1,0 +1,44 @@
+{
+    "type": "FeatureCollection",
+    "version": "draft",
+    "features": [
+{# {% for i in 0..data.count %} #}
+{% for item in data %}
+     {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    {{ item.col5}},
+                    {{ item.col4}}
+                ]
+            },
+            "properties": {
+                "label": "{{ item.col1}}",
+                "score": 0.7043427272727272,
+                "id": "{{ item.id}}",
+                "name": "{{ item.col1}}",
+                {# "postcode": "",
+                "citycode": "",
+                "oldcitycode": "",
+                "x": 703822.37,
+                "y": 7059034.91, #}
+                "city": "{{ item.col2}}",
+                "oldcity": "{{ item.col2}}",
+                "context": "59, Nord, Hauts-de-France",
+                "type": "street",
+                "importance": 0.74777
+            }
+        }
+        {% if loop.last == false %}
+        ,
+        {% endif %}
+{% endfor %}
+       
+    
+    ],
+    "attribution": "BAN",
+    "licence": "ETALAB-2.0",
+    "query": "{{query}}",
+    "limit": 5
+}
