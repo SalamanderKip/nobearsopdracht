@@ -20,7 +20,19 @@ html {
             font-size: 50px;
         }
 
+
     }
+}
+
+#coords {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    left: auto;
+}
+
+#image {
+    height: 300px;
 }
 
 

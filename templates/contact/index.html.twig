@@ -3,7 +3,7 @@
 {% block body %}
 		<div class="h-100 d-flex flex-column">
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="home">NOBEARS</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,29 +28,25 @@
 		<div class="container col-sm-10 col-md-6  mx-auto">
 			<h4 class="text-center">GET IN TOUCH</h4>
 			<h2 class="text-center underline-color">
-				<u>Send us a message</u>
+				<u>Stuur een bericht</u>
 			</h2>
-			<div class="form-group">
-				<label for="formGroupExampleInput">Jou naam</label>
+			<div class="form-group pt-3">
+				<label for="formGroupExampleInput">Jouw naam</label>
 				<input type="text" class="form-control" placeholder="naam">
 			</div>
-			<div class="form-group">
-				<label for="formGroupExampleInput">Jou email</label>
+			<div class="form-group pt-3">
+				<label for="formGroupExampleInput">Jouw email</label>
 				<input type="text" class="form-control" placeholder="email">
 			</div>
-			<div class="form-group">
+			<div class="form-group pt-3">
 				<label for="formGroupExampleInput">Bericht</label>
 				<textarea class="form-control" name="bericht" id="bericht" cols="30" rows="10" placeholder="Bericht"></textarea>
 			</div>
 			<div class="col-12">
-    			<button class="btn btn-primary mt-2" type="submit">Versturen</button>
+    			<button class="btn btn-primary mt-4" type="submit">Versturen</button>
   			</div>
-            <div class="w-100 text-center">
-			<a class="mail" href="mailto:bosmaarteninfo@gmail.com">
-				bosmaarteninfo@gmail.com
-			<a>
-            </div>
 			
         </div>
+		
 	</div>
 {% endblock %}
