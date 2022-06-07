@@ -17,3 +17,6 @@ npm run dev
 
 Stap 4: 
 Run het op localhost:8080
+
+Stap 5:
+pas de localhost credentials aan.
